@@ -63,8 +63,13 @@
 
       <section id="flyer" class="container">
         <h2 class="glow-underline js-observe">ビラ</h2>
-        <p>公演ビラ（2種）を原寸でご確認いただけます。</p>
-        <button class="btn ink" data-open-modal aria-haspopup="dialog" aria-controls="flyerModal">ビラを見る</button>
+  <div class="flyer-container">
+
+    <img src="/public/flyers/front.png" alt="ビラ1" />
+    <img src="/public/flyers/back.png" alt="ビラ2" />
+  </div>
+
+
       </section>
     </main>
 
@@ -82,8 +87,6 @@
         <div class="modal__body">
           <div class="carousel" data-carousel>
             <div class="slide is-active">
-    <img src="/public/flyers/front.png" alt="ビラ1" />
-    <img src="/public/flyers/back.png" alt="ビラ2" />
 	   </div>
           <div class="dots" data-dots role="tablist" aria-label="スライド切替">
             <button class="dot" role="tab" aria-selected="true" aria-current="true"></button>
