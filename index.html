@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ぼくのものがたり | 劇団公式</title>
+    <meta name="description" content="柔らかく、切ないファンタジー。劇団公演『ぼくのものがたり』特設サイト（ダミー）。" />
+    <meta property="og:title" content="ぼくのものがたり | 劇団公式" />
+    <meta property="og:description" content="柔らかく、切ないファンタジー。劇団公演『ぼくのものがたり』特設サイト（ダミー）。" />
+  </head>
+  <body>
+    <header>
+      <nav class="container nav" aria-label="メイン">
+        <div class="logo">劇団公式</div>
+        <div class="nav-links">
+          <a class="ink" href="#title">タイトル</a>
+          <a class="ink" href="#details">詳細</a>
+          <a class="ink" href="#ticket">チケット</a>
+          <a class="ink" href="#sns">SNS</a>
+          <a class="ink" href="#flyer">ビラ</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="ヒーロー">
+        <div class="plx layer-sky"></div>
+        <div class="plx layer-haze"></div>
+        <div class="plx layer-ground"></div>
+        <div class="container hero-content">
+          <h1 class="title" id="title">ぼくのものがたり</h1>
+          <p class="tagline">柔らかく、切ない、綺麗なファンタジー（ダミー）</p>
+          <a href="#ticket" class="btn ink" aria-label="チケットセクションへ">チケットへ</a>
+        </div>
+      </section>
+
+      <section id="details" class="container">
+        <h2 class="glow-underline js-observe">詳細</h2>
+        <div class="details-grid" role="list">
+          <div role="listitem"><div class="muted">公演日</div><div>2025年10月10日 (金) – 10月12日 (日)</div></div>
+          <div role="listitem"><div class="muted">開場 / 開演</div><div>開場 18:00 / 開演 18:30</div></div>
+          <div role="listitem"><div class="muted">会場</div><div>○○劇場 ホールA</div></div>
+          <div role="listitem"><div class="muted">アクセス</div><div><a class="ink" href="https://maps.google.com/?q=○○劇場" target="_blank" rel="noopener">Googleマップ</a></div></div>
+        </div>
+      </section>
+
+      <section id="ticket" class="container">
+        <h2 class="glow-underline js-observe">チケット</h2>
+        <p><a class="ink" href="https://tickets.example.com/abcd" target="_blank" rel="noopener">チケット</a></p>
+      </section>
+
+      <section id="sns" class="container">
+        <h2 class="glow-underline js-observe">SNS</h2>
+        <div class="social" role="list">
+          <a class="icon ink" role="listitem" href="https://x.com/tsukusho" target="_blank" rel="noopener" aria-label="X（外部）">
+            <img src="/icons/x.svg" alt="X" width="20" height="20" />
+          </a>
+          <a class="icon ink" role="listitem" href="https://www.instagram.com/tsukusho_official/" target="_blank" rel="noopener" aria-label="Instagram（外部）">
+            <img src="/icons/instagram.svg" alt="Instagram" width="20" height="20" />
+          </a>
+        </div>
+      </section>
+
+      <section id="flyer" class="container">
+        <h2 class="glow-underline js-observe">ビラ</h2>
+        <p>公演ビラ（2種）を原寸でご確認いただけます。</p>
+        <button class="btn ink" data-open-modal aria-haspopup="dialog" aria-controls="flyerModal">ビラを見る</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2025 劇団名 / Demo</div>
+    </footer>
+
+    <!-- モーダル -->
+    <div class="modal-backdrop" id="flyerModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="flyerTitle">
+      <div class="modal" role="document">
+        <div class="modal__head">
+          <h3 id="flyerTitle" style="margin:0;">ビラ</h3>
+          <button class="btn ink" data-close-modal aria-label="閉じる">閉じる</button>
+        </div>
+        <div class="modal__body">
+          <div class="carousel" data-carousel>
+            <div class="slide is-active"><img src="/flyers/front.png" alt="ビラ1" loading="lazy" decoding="async"></div>
+            <div class="slide"><img src="/flyers/back.png" alt="ビラ2" loading="lazy" decoding="async"></div>
+            <button class="nav-arrow nav-arrow--prev" data-prev aria-label="前へ">‹</button>
+            <button class="nav-arrow nav-arrow--next" data-next aria-label="次へ">›</button>
+          </div>
+          <div class="dots" data-dots role="tablist" aria-label="スライド切替">
+            <button class="dot" role="tab" aria-selected="true" aria-current="true"></button>
+            <button class="dot" role="tab" aria-selected="false"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

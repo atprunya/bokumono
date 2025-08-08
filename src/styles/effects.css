@@ -1,0 +1,4 @@
+.plx{position:absolute; inset:0; will-change:transform}
+.layer-sky{background:linear-gradient(#eef7fd, #ffffff 60%); z-index:0}
+.layer-haze{background:radial-gradient(60% 40% at 50% 20%, color-mix(in oklab, var(--accent) 12%, white), transparent 70%); opacity:.35; z-index:1}
+.layer-ground{background:linear-gradient(transparent 70%, color-mix(in oklab, var(--accent2) 28%, white)); z-index:2}

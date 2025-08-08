@@ -1,0 +1,19 @@
+header{position:sticky; top:0; z-index:50; background:#fff; backdrop-filter:saturate(1.2) blur(4px); border-bottom:1px solid rgba(0,0,0,.04)}
+.nav{display:flex; align-items:center; gap:20px; height:56px}
+.logo{font-weight:700}
+.nav-links{margin-left:auto; display:flex; gap:16px; flex-wrap:wrap}
+
+.hero{position:relative; min-height:60svh; display:grid; place-items:center; overflow:hidden}
+.hero .container{position:relative; z-index:3; text-align:center; padding:72px 20px}
+.title{font-size:clamp(28px,6vw,56px); font-weight:800; margin-bottom:.25rem}
+.tagline{color:var(--muted); margin-bottom:1.25rem}
+
+.details-grid{display:grid; gap:12px; grid-template-columns:1fr 1fr}
+@media (max-width:640px){ .details-grid{ grid-template-columns:1fr } }
+.muted{color:var(--muted)}
+
+.social{display:flex; gap:16px; align-items:center}
+.icon{width:28px; height:28px; display:inline-grid; place-items:center; border-radius:8px}
+.icon img{width:20px; height:20px}
+
+footer{padding:48px 0; border-top:1px solid rgba(0,0,0,.06); color:var(--muted); font-size:.95rem}
