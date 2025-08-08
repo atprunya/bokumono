@@ -93,4 +93,17 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}.flyer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 3rem 0;
 }
+
+.flyer-container img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
