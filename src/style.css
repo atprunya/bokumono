@@ -102,7 +102,7 @@ button:focus-visible {
 }
 
 .flyer-container img {
-  max-width: 300px;
+  max-width: 50px;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
